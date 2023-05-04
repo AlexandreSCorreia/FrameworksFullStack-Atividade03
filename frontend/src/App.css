@@ -1,0 +1,256 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 1300px) {
+  html {
+      font-size:58%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+      font-size:55%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+      font-size:62.5%;
+  }
+}
+
+html,body {
+  overflow-x: hidden;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1,h2,h3,h4 {
+  font-weight: 600;
+  color: #222;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+
+h3,h4 {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 6.2rem;
+}
+
+@media (max-width: 1050px) {
+  h1 {
+      font-size:5.6rem;
+  }
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+@media (max-width: 1050px) {
+  h2 {
+      font-size:3.4rem;
+  }
+}
+
+@media (max-width: 560px) {
+  h2 {
+      font-size:2.8rem;
+  }
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+@media (max-width: 1050px) {
+  h3 {
+      font-size:3.2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  h3 {
+      font-size:2rem;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+@media (max-width: 1050px) {
+  h4 {
+      font-size:1.8rem;
+  }
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+@media (max-width: 1050px) {
+  p {
+      font-size:1.6rem;
+  }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+nav{
+  font-size: 1.6rem;
+}
+
+.s-News{
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  background-image: url('https://images.hdqwalls.com/download/cyberpunk-street-night-4k-ol-2048x1152.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content{
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+  max-height: 75rem;
+  justify-content: space-between;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background: rgba(10, 10, 10, .65);
+  box-shadow: 0 8px 32px rgb(2, 4, 24);
+  padding: 1rem;
+}
+
+.destaque {
+  margin-right: 2rem;
+}
+
+.destaque ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.destaque ul h4, .pricipais ul h4{
+  margin-bottom: 1.5rem;
+  color: aliceblue;
+}
+
+.destaque ul .card{
+  width: 22.5rem;
+  height: 32rem;
+  background: rgba(255, 255, 255, 0.301);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.destaque ul .card img{
+  width: 100%;
+  max-height: 180px;
+  margin-bottom: 1rem;
+}
+
+.destaque ul li.card:last-child
+{
+  margin-bottom: 0rem;
+}
+
+.pricipais {
+  width: 100%;
+
+}
+
+.destaque ul,
+.pricipais ul{
+  overflow: hidden;
+}
+.pricipais ul li.card{
+  display: flex;
+  width: 100%;
+  height: 8rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.301);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.pricipais ul .card img{
+  width: 7rem;
+  max-height: 7rem;
+  margin-right: 1.5rem;
+}
+
+.pricipais ul .card p{
+  font-size: 1.4rem;
+  line-height: 120%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
